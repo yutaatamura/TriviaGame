@@ -18,17 +18,44 @@
 
 <h1 class="jumbotron text-center">Trivia Game</h1>
 
-<div id="countDown"></div>
+<div id="timerContainer">Time Left: <span id="countDown"></span></div>
+
+<div class="container">
+    <div><span id="question1"></span>
+        <div class="radio">
+            <input type="radio" id="selection1" name="answer1" value="red"><label for="selection1">Red</label>
+            <input type="radio" id="selection2" name="answer1" value="blue"><label for="selection1">Blue</label> 
+            <input type="radio" id="selection3" name="answer1" value="yellow"><label for="selection1">Yellow</label> 
+        </div>
+    </div>
+</div>
+
+<div class="container">
+        <div><span id="question2"></span>
+            <div class="radio">
+                <input type="radio" id="selection1" name="answer2" value="red"><label for="selection1">Red</label>
+                <input type="radio" id="selection2" name="answer2" value="blue"><label for="selection2">Blue</label> 
+                <input type="radio" id="selection3" name="answer2" value="yellow"><label for="selection3">Yellow</label> 
+            </div>
+        </div>
+    </div>
+
+<div class="container">
+    <div><span id="question3"></span>
+        <div class="radio">
+            <input type="radio" id="selection1" name="answer3" value="red"><label for="selection1">Red</label>
+            <input type="radio" id="selection2" name="answer3" value="blue"><label for="selection2">Blue</label> 
+            <input type="radio" id="selection3" name="answer3" value="yellow"><label for="selection3">Yellow</label> 
+        </div>
+    </div>
+</div>
 
 
-<div class="radio">
-    <input type="radio" name="answer1"> Red
-</div>
-<input type="radio" name="answer1"> Blue
-</div>
-<input type="radio" name="answer1"> Yellow
-</div>
+
+<div>Correct: <span id="correctScore"></span></div>
+<div>Incorrect: <span id="wrongScore"></span></div>
     
+<button type="button" id="submitButton">Submit!</button>
 
     <script type="text/javascript" src="./assets/javascript/app.js"></script>
     
