@@ -16,46 +16,85 @@
 </head>
 <body>
 
-<h1 class="jumbotron text-center">Trivia Game</h1>
-
-<div id="timerContainer">Time Left: <span id="countDown"></span></div>
-
 <div class="container">
-    <div><span id="question1"></span>
-        <div class="radio">
-            <input type="radio" id="selection1" name="answer1" value="red"><label for="selection1">Red</label>
-            <input type="radio" id="selection2" name="answer1" value="blue"><label for="selection1">Blue</label> 
-            <input type="radio" id="selection3" name="answer1" value="yellow"><label for="selection1">Yellow</label> 
-        </div>
-    </div>
-</div>
+    <h1 class="jumbotron text-center">Trivia Game</h1>
 
-<div class="container">
-        <div><span id="question2"></span>
-            <div class="radio">
-                <input type="radio" id="selection1" name="answer2" value="red"><label for="selection1">Red</label>
-                <input type="radio" id="selection2" name="answer2" value="blue"><label for="selection2">Blue</label> 
-                <input type="radio" id="selection3" name="answer2" value="yellow"><label for="selection3">Yellow</label> 
+    
+    <div id="messageBox" class="text-center"></div>
+    <br>
+    <div class="row">
+        <div id="questionsColumn" class="col-md-8 border border-primary">
+            <div class="container col-md-12 border border-primary">
+                <div><span id="question1"></span>
+                    <div class="radio">
+                        <input type="radio" name="answer1" value="Evil"><label>Evil</label>
+                        <input type="radio" name="answer1" value="Energy"><label>Energy</label> 
+                        <input type="radio" name="answer1" value="Empire"><label>Empire</label> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        
+
+            <div class="container">
+                <div><span id="question2"></span>
+                    <div class="radio">
+                        <input type="radio" name="answer2" value="Los Angeles"><label>Los Angeles</label>
+                        <input type="radio" name="answer2" value="New York"><label>New York</label> 
+                        <input type="radio" name="answer2" value="Chicago"><label>Chicago</label> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div><span id="question3"></span>
+                    <div class="radio">
+                        <input type="radio" name="answer3" value="Anonymous"><label>Anonymous</label>
+                        <input type="radio" name="answer3" value="LulzSec"><label>LulzSec</label> 
+                        <input type="radio" name="answer3" value="Guardians of Peace"><label>Guardians of Peace</label> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div><span id="question4"></span>
+                    <div class="radio">
+                        <input type="radio" name="answer4" value="Windows"><label>Windows</label>
+                        <input type="radio" name="answer4" value="iOS"><label>iOS</label> 
+                        <input type="radio" name="answer4" value="Kali Linux"><label>Kali Linux</label> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div><span id="question5"></span>
+                    <div class="radio">
+                        <input type="radio" name="answer3" value="Qwerty"><label>Qwerty</label>
+                        <input type="radio" name="answer3" value="Python"><label>Python</label> 
+                        <input type="radio" name="answer3" value="Dell"><label>Dell</label> 
+                    </div>
+                </div>
             </div>
         </div>
+
+            <div class="col-md-4 border border-secondary">
+                <div class="container">
+                    <div id="timerContainer" class="text-center">
+                        <h4 class="text-left">Time Left:</h4>
+                        <span id="countDown" class="border border-danger"></span> sec</div>
+                </div>
+                <div>Correct: <span id="correctScore"></span></div>
+                <div>Incorrect: <span id="wrongScore"></span></div>
+            </div>
+        
     </div>
 
-<div class="container">
-    <div><span id="question3"></span>
-        <div class="radio">
-            <input type="radio" id="selection1" name="answer3" value="red"><label for="selection1">Red</label>
-            <input type="radio" id="selection2" name="answer3" value="blue"><label for="selection2">Blue</label> 
-            <input type="radio" id="selection3" name="answer3" value="yellow"><label for="selection3">Yellow</label> 
-        </div>
-    </div>
-</div>
 
 
-
-<div>Correct: <span id="correctScore"></span></div>
-<div>Incorrect: <span id="wrongScore"></span></div>
     
-<button type="button" id="submitButton">Submit!</button>
+        
+    <button type="button" id="submitButton">Submit!</button>
+</div>
 
     <script type="text/javascript" src="./assets/javascript/app.js"></script>
     
