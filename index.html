@@ -12,90 +12,145 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
-    <title>Trivia Game</title>
+    <title>Mr. Robot Trivia</title>
 </head>
 <body>
 
 <div class="container">
-    <h1 class="jumbotron text-center">Trivia Game</h1>
+    <h1 class="jumbotron text-center">Mr. Robot Trivia</h1>
 
-    
-    <div id="messageBox" class="text-center"></div>
+    <div id="messageBox" class="text-center">How well do you know Mr. Robot?!</div>
     <br>
     <div class="row">
         <div id="questionsColumn" class="col-md-8 border border-primary">
-            <div class="container col-md-12 border border-primary">
-                <div><span id="question1"></span>
-                    <div class="radio">
-                        <input type="radio" name="answer1" value="Evil"><label>Evil</label>
-                        <input type="radio" name="answer1" value="Energy"><label>Energy</label> 
-                        <input type="radio" name="answer1" value="Empire"><label>Empire</label> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4"></div>
-        
-
+            <br>
             <div class="container">
-                <div><span id="question2"></span>
+                <div>1. <span id="question1" class="question"></span>
                     <div class="radio">
-                        <input type="radio" name="answer2" value="Los Angeles"><label>Los Angeles</label>
-                        <input type="radio" name="answer2" value="New York"><label>New York</label> 
-                        <input type="radio" name="answer2" value="Chicago"><label>Chicago</label> 
+                        <label class="block"><input type="radio" name="answer1" value="a"> Evil</label>
+                        <label class="block"><input type="radio" name="answer1" value="b"> Energy</label> 
+                        <label class="block"><input type="radio" name="answer1" value="c"> Empire</label> 
                     </div>
                 </div>
             </div>
-
+            <hr>
             <div class="container">
-                <div><span id="question3"></span>
+                <div>2. <span id="question2" class="question"></span>
                     <div class="radio">
-                        <input type="radio" name="answer3" value="Anonymous"><label>Anonymous</label>
-                        <input type="radio" name="answer3" value="LulzSec"><label>LulzSec</label> 
-                        <input type="radio" name="answer3" value="Guardians of Peace"><label>Guardians of Peace</label> 
+                        <label class="block"><input type="radio" name="answer2" value="a"> Los Angeles</label>
+                        <label class="block"><input type="radio" name="answer2" value="b"> New York</label> 
+                        <label class="block"><input type="radio" name="answer2" value="c"> Chicago</label> 
                     </div>
                 </div>
             </div>
-
+            <hr>
             <div class="container">
-                <div><span id="question4"></span>
+                <div>3. <span id="question3" class="question"></span>
                     <div class="radio">
-                        <input type="radio" name="answer4" value="Windows"><label>Windows</label>
-                        <input type="radio" name="answer4" value="iOS"><label>iOS</label> 
-                        <input type="radio" name="answer4" value="Kali Linux"><label>Kali Linux</label> 
+                        <label class="block"><input type="radio" name="answer3" value="a"> Anonymous</label>
+                        <label class="block"><input type="radio" name="answer3" value="b"> LulzSec</label> 
+                        <label class="block"><input type="radio" name="answer3" value="c"> Guardians of Peace</label> 
                     </div>
                 </div>
             </div>
-
+            <hr>
             <div class="container">
-                <div><span id="question5"></span>
+                <div>4. <span id="question4" class="question"></span>
                     <div class="radio">
-                        <input type="radio" name="answer3" value="Qwerty"><label>Qwerty</label>
-                        <input type="radio" name="answer3" value="Python"><label>Python</label> 
-                        <input type="radio" name="answer3" value="Dell"><label>Dell</label> 
+                        <label class="block"><input type="radio" name="answer4" value="a"> Windows</label>
+                        <label class="block"><input type="radio" name="answer4" value="b"> iOS</label> 
+                        <label class="block"><input type="radio" name="answer4" value="c"> Kali Linux</label> 
                     </div>
                 </div>
             </div>
+            <hr>
+            <div class="container">
+                <div>5. <span id="question5" class="question"></span>
+                    <div class="radio">
+                        <label class="block"><input type="radio" name="answer5" value="a"> Qwerty</label>
+                        <label class="block"><input type="radio" name="answer5" value="b"> Python</label> 
+                        <label class="block"><input type="radio" name="answer5" value="c"> Dell</label> 
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div>6. <span id="question6" class="question"></span>
+                    <div class="radio">
+                        <label class="block"><input type="radio" name="answer6" value="a"> Darlene</label>
+                        <label class="block"><input type="radio" name="answer6" value="b"> Tyrell Wellick</label> 
+                        <label class="block"><input type="radio" name="answer6" value="c"> Elliot</label> 
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div>7. <span id="question7" class="question"></span>
+                    <div class="radio">
+                        <label class="block"><input type="radio" name="answer7" value="a"> Erased everyone's financial debt</label>
+                        <label class="block"><input type="radio" name="answer7" value="b"> Crashed all the computers on Earth </label> 
+                        <label class="block"><input type="radio" name="answer7" value="c"> Hijacked nuclear missiles</label> 
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div>8. <span id="question8" class="question"></span>
+                    <div class="radio">
+                        <label class="block"><input type="radio" name="answer8" value="a"> Cisco</label>
+                        <label class="block"><input type="radio" name="answer8" value="b"> Angela</label> 
+                        <label class="block"><input type="radio" name="answer8" value="c"> Joanna</label> 
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div>9. <span id="question9" class="question"></span>
+                    <div class="radio">
+                        <label class="block"><input type="radio" name="answer9" value="a"> "Who am I?</label>
+                        <label class="block"><input type="radio" name="answer9" value="b"> "Who are you?"</label> 
+                        <label class="block"><input type="radio" name="answer9" value="c"> "Hello friend"</label> 
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div>10. <span id="question10" class="question"></span>
+                    <div class="radio">
+                        <label class="block"><input type="radio" name="answer10" value="a"> Washington Township Scandal</label>
+                        <label class="block"><input type="radio" name="answer10" value="b"> Washington Chemical Spill</label> 
+                        <label class="block"><input type="radio" name="answer10" value="c"> Washington Benzene Crisis</label> 
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div>11. <span id="question11" class="question"></span>
+                    <div class="radio">
+                        <label class="block"><input type="radio" name="answer11" value="a"> Red Dragon</label>
+                        <label class="block"><input type="radio" name="answer11" value="b"> White Rose</label> 
+                        <label class="block"><input type="radio" name="answer11" value="c"> Yellow Orchid</label> 
+                    </div>
+                </div>
+            </div>
+            <br>
+        <div id="buttonContainer">
+            <button type="button" class="btn btn-danger" id="submitButton">Submit!</button>
         </div>
-
-            <div class="col-md-4 border border-secondary">
-                <div class="container">
-                    <div id="timerContainer" class="text-center">
-                        <h4 class="text-left">Time Left:</h4>
-                        <span id="countDown" class="border border-danger"></span> sec</div>
-                </div>
-                <div>Correct: <span id="correctScore"></span></div>
-                <div>Incorrect: <span id="wrongScore"></span></div>
+        </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <div id="timerContainer" class="border border-primary">
+                    <h4 class="text-left">Time Left:</h4>
+                    <span id="countDown"></span>sec 
+            
+                    <div>Correct: <span id="correctScore"></span></div>
+                    <div>Incorrect: <span id="wrongScore"></span></div>
+                </div>        
             </div>
-        
-    </div>
-
-
-
+            <div class="col-md-1"></div>         
+</div>       
     
-        
-    <button type="button" id="submitButton">Submit!</button>
-</div>
-
     <script type="text/javascript" src="./assets/javascript/app.js"></script>
     
 </body>

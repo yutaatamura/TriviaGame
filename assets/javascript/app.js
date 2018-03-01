@@ -3,7 +3,7 @@ $(document).ready(function() {
 //countdown timer that counts down 
 
 var interval;
-var countDown = 20;
+var countDown = 15;
 var triviaContent = {
     one: {
        question : "What does the \'E'\ stand for in E-Corp?",
@@ -24,6 +24,30 @@ var triviaContent = {
     five: {
         question : "What is Elliot's fish's name?",
         answer : "Qwerty"
+    },
+    six: {
+        question: "Who implemented the hack that Elliot found on Allsafe's servers in Season 1?",
+        answer : "Elliot"
+    },
+    seven: {
+        question: "What did the five/nine hack actually do?",
+        answer : "Erased everyone's financial debt"
+    },
+    eight: {
+        question: "Who helped Fsociety hack the FBI?",
+        answer : "Angela"
+    },
+    nine: {
+        question: "How does Elliot first greet viewers?",
+        answer : "Hello, friend"
+    },
+    ten: {
+        question: "What was the name of the toxic dump cover up by E-Corp?",
+        answer : "Washington Township Scandal"
+    },
+    eleven: {
+        question: "What is the name of the leader of the Chinese hacker group, the Dark Army",
+        answer : "White rose"
     }
 }
 // how to push objects within objects into an array
@@ -31,18 +55,31 @@ var triviaContent = {
 //     answersArray = answersArray.push(triviaContent.)
 
 var answersArray = [
-    "Evil",
-    "New York",
-    "Anonymous",
-    "Kali Linux",
-    "Qwerty"
-]
+    "a",
+    "b",
+    "a",
+    "c",
+    "a",
+    "c",
+    "a",
+    "b",
+    "c",
+    "a",
+    "b"
 
+]
+//how to simply this code; loop?
 $('#question1').text(triviaContent.one.question);
 $('#question2').text(triviaContent.two.question);
 $('#question3').text(triviaContent.three.question);
 $('#question4').text(triviaContent.four.question);
 $('#question5').text(triviaContent.five.question);
+$('#question6').text(triviaContent.six.question);
+$('#question7').text(triviaContent.seven.question);
+$('#question8').text(triviaContent.eight.question);
+$('#question9').text(triviaContent.nine.question);
+$('#question10').text(triviaContent.ten.question);
+$('#question11').text(triviaContent.eleven.question);
 
 
 
@@ -58,7 +95,7 @@ function count() {
     if (countDown === 0) {
         clearInterval(interval);
         disableSubmitButton();
-        console.log("You ran out of time!");
+        $('#messageBox').text("You ran out of time!");
     }
 }
 
