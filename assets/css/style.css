@@ -47,10 +47,12 @@ body {
 
 .question {
     font-weight: bold;
+
 }
 
 #questionsColumn {  
 background:rgba(255, 255, 255, 0.9);
+padding: 30px;
 }
 
 #timerContainer {
@@ -64,4 +66,12 @@ background:rgba(255, 255, 255, 0.9);
 
 button {
     display: block;
+}
+
+#contentWrap {
+    margin-bottom: 50px;
+}
+
+.block {
+    background-color: rgba(240, 162, 162, 0.5);
 }
