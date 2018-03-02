@@ -3,7 +3,7 @@ $(document).ready(function() {
 //countdown timer that counts down 
 
 var interval;
-var countDown = 15;
+var countDown = 60;
 var triviaContent = {
     one: {
        question : "What does the \'E'\ stand for in E-Corp?",
@@ -46,7 +46,7 @@ var triviaContent = {
         answer : "Washington Township Scandal"
     },
     eleven: {
-        question: "What is the name of the leader of the Chinese hacker group, the Dark Army",
+        question: "What is the name of the leader of the Chinese hacker group, the Dark Army?",
         answer : "White rose"
     }
 }
@@ -125,10 +125,14 @@ $('input[name=answer'+[i+1]+']:checked').each(function(){
         
     } else if (selAnswerArr[i] === answersArray[i]) {
             correctScore++;
+            
             $('#correctScore').text(correctScore);
+            $('#section'+[i+1]).css("background-color","rgb(107, 230, 107)");
     } else {
             wrongScore++;
             $('#wrongScore').text(wrongScore);
+            $('#section'+[i+1]).css("background-color","rgb(211, 64, 64)");
+            $('#correctAnswer'+[i+1]).css("background-color","rgb(253, 253, 253)").append(" (Correct answer is "+answersArray[i]+".)");
     }
 };
 
